@@ -2,9 +2,6 @@ package com.dynamitechetan.gradientbg;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.LinearLayout;
-
-import com.dynamitechetan.flowinggradient.FlowingGradientClass;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,14 +9,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        LinearLayout rl = (LinearLayout) findViewById(R.id.ln);
 
+//        Uncomment this to use library in Java
 
-        FlowingGradientClass fg = new FlowingGradientClass()
-                .setBackgroundResource(R.drawable.translate)
-                .onLinearLayout(rl)
-                .setDuration(4000)
-                .start();
+//        LinearLayout rl = (LinearLayout) findViewById(R.id.ln);
+//        FlowingGradientClass fg = new FlowingGradientClass()
+//                .setBackgroundResource(R.drawable.trans)
+//                .onLinearLayout(rl)
+//                .setDuration(4000)
+//                .start();
 
     }
 }

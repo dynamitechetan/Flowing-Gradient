@@ -8,23 +8,25 @@
     android:id="@+id/Layout">
 
     <com.dynamitechetan.flowinggradient.FlowingGradient
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        gradient:duration = "1000"
-        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        gradient:transition_duration = "4000"
+        gradient:transition_drawable="@drawable/trans"
         />
+<!---->
+<!--UNCOMMENT THIS TO SEE USAGE IN LINEAR LAYOUT-->
 
 
-    <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:orientation="horizontal"
-        android:id="@+id/ln"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
+    <!--<LinearLayout-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:id="@+id/ln"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true">-->
 
 
-    </LinearLayout>
+    <!--</LinearLayout>-->
 
 
 

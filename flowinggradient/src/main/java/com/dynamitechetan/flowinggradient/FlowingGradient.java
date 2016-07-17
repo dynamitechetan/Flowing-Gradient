@@ -23,7 +23,7 @@ public class FlowingGradient extends View {
         TypedArray a = getContext().obtainStyledAttributes(attrs,R.styleable.gradient,0, 0);
 
         draw = a.getResourceId(R.styleable.gradient_transition_drawable, R.drawable.translate);
-        duration = a.getInt(R.styleable.gradient_duration,75);
+        duration = a.getInt(R.styleable.gradient_transition_duration,75);
         init();
     }
 
