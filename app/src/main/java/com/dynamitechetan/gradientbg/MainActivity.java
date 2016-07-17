@@ -13,21 +13,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         LinearLayout rl = (LinearLayout) findViewById(R.id.ln);
-        FlowingGradientClass fg = new FlowingGradientClass()
 
+
+        FlowingGradientClass fg = new FlowingGradientClass()
                 .setBackgroundResource(R.drawable.translate)
                 .onLinearLayout(rl)
-                .setDuration(1000)
+                .setDuration(4000)
                 .start();
 
-//        layout.setBackgroundResource(R.drawable.translate);
-//        // Get the background, which has been compiled to an AnimationDrawable object.
-//        AnimationDrawable frameAnimation = (AnimationDrawable) layout.getBackground();
-//
-//        // Start the animation (looped playback by default).
-////        frameAnimation.setAlpha(1);
-//        frameAnimation.setEnterFadeDuration(4000);
-//        frameAnimation.setExitFadeDuration(4000);
-//        frameAnimation.start();
     }
 }
