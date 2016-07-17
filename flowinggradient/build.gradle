@@ -9,7 +9,7 @@ android {
         minSdkVersion 12
         targetSdkVersion 23
         versionCode 1
-        versionName "1.0"
+        versionName "1.1"
     }
     buildTypes {
         release {
@@ -27,7 +27,7 @@ dependencies {
 
 
 group = 'com.dynamitechetan.flowinggradient' // Change this to match your package name
-version = '1.0' // Change this to match your version number
+version = '1.1' // Change this to match your version number
 
 
 
@@ -56,10 +56,10 @@ bintray {
         name = 'com.dynamitechetan.flowinggradient'
 
         version {
-            name = '1.0.0'
+            name = '1.1'
             desc = 'A library for making a flowing gradient effect on Layouts and Images'
             released  = new Date()
-            vcsTag = '1.0.0'
+            vcsTag = '1.1'
         }
 
         licenses = ['Apache-2.0']
