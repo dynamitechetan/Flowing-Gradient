@@ -11,12 +11,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 //        Uncomment this to use library in Java
-
+//
 //        LinearLayout rl = (LinearLayout) findViewById(R.id.ln);
 //        FlowingGradientClass fg = new FlowingGradientClass()
 //                .setBackgroundResource(R.drawable.trans)
 //                .onLinearLayout(rl)
-//                .setDuration(4000)
+//                .setTransitionDuration(4000)
 //                .start();
 
     }

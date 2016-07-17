@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.jfrog.bintray'
+apply plugin: "com.github.dcendents.android-maven"
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -22,4 +23,55 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
+}
+
+
+group = 'com.dynamitechetan.flowinggradient' // Change this to match your package name
+version = '1.0' // Change this to match your version number
+
+
+
+task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier 'sources'
+}
+
+task generateJavaDocs(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath()
+            .join(File.pathSeparator))
+}
+
+task generateJavaDocsJar(type: Jar) {
+    from generateJavaDocs.destinationDir
+    classifier 'javadoc'
+}
+generateJavaDocsJar.dependsOn generateJavaDocs
+
+bintray {
+    user = 'dynamitechetan'
+    key = '847aa69008163a43e35b78f3fb450c9f18a4948c'
+    pkg {
+        repo = 'maven'
+        name = 'com.dynamitechetan.flowinggradient'
+
+        version {
+            name = '1.0.0'
+            desc = 'A library for making a flowing gradient effect on Layouts and Images'
+            released  = new Date()
+            vcsTag = '1.0.0'
+        }
+
+        licenses = ['Apache-2.0']
+        //vcs url
+
+        vcsUrl = 'https://github.com/dynamitechetan/GradientBG.git'
+        websiteUrl = 'https://github.com/dynamitechetan'
+    }
+    configurations = ['archives']
+}
+
+artifacts {
+    archives generateJavaDocsJar
+    archives generateSourcesJar
 }

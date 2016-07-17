@@ -11,28 +11,15 @@ import android.widget.RelativeLayout;
  */
 public class FlowingGradientClass {
 
-    String age;
-    String name;
-    int Duration;
+    int Duration=4000;
     RelativeLayout rl;
     LinearLayout ll;
     ImageView im;
     int alphaint;
     int d;
     AnimationDrawable frameAnimation;
-//    = (AnimationDrawable) layout.getBackground();
 
-
-//    RelativeLayout layout = (RelativeLayout) findViewById(R.id.Layout);
-    // Get the background, which has been compiled to an AnimationDrawable object.
-
-    // Start the animation (looped playback by default).
-//        frameAnimation.setAlpha(1);
-
-
-
-
-    public FlowingGradientClass setDuration(int time) {
+    public FlowingGradientClass setTransitionDuration(int time) {
         this.Duration = time;
 
         return this;
@@ -77,16 +64,9 @@ public class FlowingGradientClass {
 
         return this;
     }
-//    public FlowingGradientClass init() {
-//
-//
-//        return this;
-//    }
 
     public FlowingGradientClass setBackgroundResource(int d) {
         this.d = d;
-
-
         return this;
     }
     public FlowingGradientClass setAlpha(int alphaint) {
@@ -95,14 +75,4 @@ public class FlowingGradientClass {
         return this;
     }
 
-
-
-
-    public FlowingGradientClass setName(String name) {
-        this.name = name;
-        return this;
-    }
-    public void displayValue() {
-        System.out.println("Name:" + name + "\n\n" + "Age:" + age);
-    }
 }
