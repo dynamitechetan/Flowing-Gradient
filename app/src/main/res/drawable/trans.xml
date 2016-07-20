@@ -6,5 +6,4 @@
 
     <item android:drawable="@drawable/original_state" android:duration="4000" />
     <item android:drawable="@drawable/fifth_bg" android:duration="4000" />
-
 </animation-list>
