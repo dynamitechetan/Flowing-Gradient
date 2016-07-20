@@ -1,5 +1,6 @@
 # Flowing Gradient Library
 #### Min SDK 12
+![Screenshot](screenshots/Screenshot_20160720-215934.png)
 ## How to use
 Add these lines in your build.gradle files:
 ##### In your Project Level build.gradle
