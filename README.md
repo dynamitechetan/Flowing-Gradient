@@ -6,9 +6,7 @@ Add these lines in your build.gradle files:
 ##### In your Project Level build.gradle
 ```xml
 repositories {
-	maven {
-            url 'https://dl.bintray.com/dynamitechetan/maven'
-        }
+        jcenter()
 }
 ```
 ##### In your App Level build.gradle
