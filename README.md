@@ -1,4 +1,5 @@
 # Flowing Gradient Library
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Flowing--Gradient-green.svg?style=true)](https://android-arsenal.com/details/1/3984)
 [![API](https://img.shields.io/badge/API-12+-blue.svg)](https://github.com/dynamitechetan/Flowing-Gradient) Android ver 3.1+
 ![Screenshot](screenshots/Screenshot_20160720-215934.png)
 ## How to use
