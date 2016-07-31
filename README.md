@@ -5,14 +5,14 @@
 ## How to use
 Add these lines in your build.gradle files:
 ##### In your Project Level build.gradle
-```xml
+```gradle
 repositories {
         jcenter()
 }
 ```
 ##### In your App Level build.gradle
 
-```xml
+```gradle
 dependencies {
     compile 'com.dynamitechetan.flowinggradient:flowinggradient:1.1'
 }
@@ -86,7 +86,7 @@ Making a Gradient in Android
 # Using This Library in JAVA
 ## BASIC USAGE
 
-```xml
+```java
   RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
   FlowingGradientClass grad = new FlowingGradientClass();
                 grad.setBackgroundResource(R.drawable.translate)
@@ -95,12 +95,12 @@ Making a Gradient in Android
                 .start();
 ```
 ####You are requested to use the methods in this order or sometimes it can end up in a null pointer exception.
-```xml
+```java
 .onReltiveLayout() and be replaced by .onImageView() or .onLinearLayout()  as per use.
 ```
 
 ## To set Alpha of the transition
-```xml
+```java
   RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
   FlowingGradientClass grad = new FlowingGradientClass();
                 grad.setBackgroundResource(R.drawable.translate)
