@@ -17,6 +17,16 @@ dependencies {
     compile 'com.dynamitechetan.flowinggradient:flowinggradient:1.1'
 }
 ```
+
+# Using Maven
+```maven
+<dependency>
+<groupId>com.dynamitechetan.flowinggradient</groupId> 
+<artifactId>flowinggradient</artifactId>
+<version>1.1</version>
+<type>pom</type>
+</dependency>
+```
 ## BASIC USAGE
 ```xml
    <com.dynamitechetan.flowinggradient.FlowingGradient
