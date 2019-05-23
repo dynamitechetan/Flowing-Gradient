@@ -15,7 +15,7 @@ repositories {
 
 ```gradle
 dependencies {
-    compile 'com.dynamitechetan.flowinggradient:flowinggradient:1.1'
+    implementation 'com.dynamitechetan.flowinggradient:flowinggradient:1.1'
 }
 ```
 
